@@ -84,7 +84,7 @@
                         <a href="#" title="More actions (e.g. Grade)"><h1>Research question</h1><div id="my-dropdown"></div></a>
                     </div>
                 </div>
-                <a title="Share+Add this with or to anyone or anywhere" class="share_add" href="#">
+                <a title="Share+Add this with or to anyone or anywhere" class="share_add action_button share" href="javascript:;">
                     <div class="gt-action-clip-secondary-bg-gradient">
                         <div class="gt-action-clip-secondary-clip-top"></div>
                         <div class="action-icon" id="share_add"></div>
@@ -114,7 +114,7 @@
                                 <h2 class="panel_header">Results <span class="gt-counts-container">86</span></h2>
                                 <div id="select-all"><input type="checkbox"/></div>
                                 <div class="action_button share fixed_width">
-                                    <a href="#">
+                                    <a href="javascript:;">
                                         <div class="share-black-icon gt-force-left"></div>
                                         <span>Share + add</span>
                                     </a>
@@ -178,7 +178,7 @@
                                             </div>
                                             <div class="summary-panel">
                                                 <h3>2.  "Counting bacteria pathogens in water" + "creek"</h3>
-                                                <div>
+                                                <div style="display: none;">
                                                     <span>Types</span>
                                                     <ul>
                                                         <li><a href="#">Journal articles</a></li>
@@ -188,7 +188,7 @@
                                                         <li><a href="#">Websites</a></li>
                                                     </ul>
                                                 </div>
-                                                <div>
+                                                <div style="display: none;">
                                                     <span>Sources</span>
                                                     <ul>
                                                         <li><a href="#">Web of Science</a></li>
@@ -197,7 +197,7 @@
                                                         <li><a href="#">PubMed</a></li>
                                                     </ul>
                                                 </div>
-                                                <div>
+                                                <div style="display: none;">
                                                     <span>Requirements</span>
                                                     <ul>
                                                         <li><a href="#">Biology 101 / Group Project: Ecology Research Project profile</a></li>
@@ -227,6 +227,7 @@
                 </div> 
                 <div class="gt-content-column" id="gt-right-column-open">
                     <div id="close-column-button"></div>
+                    <div id="open-column-button" style="display: none;"></div>
                     <div class="details">
                         <h2>Details</h2>
                         <ul>
@@ -287,5 +288,6 @@
             </div>
             <button type="button" class="gt-button gt-overlay-button" id="add-collection-btn">Add</button>
         </div>
+
     </body>
 </html>

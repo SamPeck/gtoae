@@ -15,7 +15,11 @@
             $(function() {
                 $( "#accordion" ).accordion({
                     heightStyle: "content",
-                    active: 2,
+                    active: 0,
+                });
+                $("#accordion2").accordion({
+                    heightStyle: "content",
+                    active: 0,
                 });
             });
         </script>
@@ -86,13 +90,13 @@
                         <span>Collection</span>
                     </div>
                 </div>
-                <a title="Share+Add this with or to anyone or anywhere" class="share_add" href="javascript:;" id="">
+                <a title="Share+Add this with or to anyone or anywhere" class="share_add action_button share" href="javascript:;" id="">
                     <div class="gt-action-clip-secondary-bg-gradient">
                         <div class="gt-action-clip-secondary-clip-top"></div>
                         <div class="action-icon" id="share_add"></div>
                     </div>
                 </a>
-                <a title="Discuss this collection" class="discussions" href="#">
+                <a title="Discuss this collection" class="discussions" href="javascript:;">
                     <div class="gt-action-clip-tertiary-bg-gradient">
                         <div class="gt-action-clip-tertiary-clip-top"></div>
                         <div class="action-icon" id="discussions"></div>
@@ -127,7 +131,7 @@
                         </div>
                     </div>
 
-                    <div id="gridview-listed-item">
+                    <div class="gridview-listed-item">
                             <div id="container">
                                 <div id="container-inner">
                                     <div id="title">
@@ -150,7 +154,7 @@
                             </div>
                         </div>
 
-                        <div id="gridview-listed-item">
+                        <div class="gridview-listed-item">
                             <div id="container">
                                 <div id="container-inner">
                                     <div id="title">
@@ -173,7 +177,7 @@
                             </div>
                         </div>
 
-                        <div id="gridview-listed-item">
+                        <div class="gridview-listed-item">
                             <div id="container">
                                 <div id="container-inner">
                                     <div id="title">
@@ -196,7 +200,7 @@
                             </div>
                         </div>
 
-                        <div id="gridview-listed-item">
+                        <div class="gridview-listed-item">
                             <div id="container">
                                 <div id="container-inner">
                                     <div id="title">
@@ -223,83 +227,108 @@
 
                 <div class="gt-content-column" id="gt-right-column-open">
                     <div id="close-column-button"></div>
-                    <div class="details" id="content">
-                        <h2>Details</h2>
-                        <div id="accordion">
-                            <h3>Shared with</h3>
-                            <div>
-                                <ul>
-                                    <li>
-                                        <div>
-                                            <h2>People<span class="gt-counts-container">1</span></h2>
-                                            <a href="#" title="John Librarian"><img id="profile-image" src="images/s2-images/profile-pic-mini-john.png" alt="John Librarian"/>John Librarian </a>
-                                            <h2>Courses<span class="gt-counts-container">1</span></h2>
-                                            <a href="#" title="Biology 101" id="last-item"><img id="profile-image" src="images/s2-images/profile-pic-mini-biology101.png" alt="Biology 101"/>Biology 101 </a>
-                                        </div>
-                                    </li>
-                                </ul>
+                    <div id="open-column-button" style="display: none;"></div>
+                    <div>
+                        <div class="details" id="content">
+                            <h2>Details</h2>
+                            <div id="accordion">
+                                <h3>Shared with</h3>
+                                <div>
+                                    <ul>
+                                        <li>
+                                            <div>
+                                                <h2>People<span class="gt-counts-container">1</span></h2>
+                                                <a href="#" title="John Librarian"><img id="profile-image" src="images/s2-images/profile-pic-mini-john.png" alt="John Librarian"/>John Librarian </a>
+                                                <h2>Courses<span class="gt-counts-container">1</span></h2>
+                                                <a href="#" title="Biology 101" id="last-item"><img id="profile-image" src="images/s2-images/profile-pic-mini-biology101.png" alt="Biology 101"/>Biology 101 </a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <h3>Created by</h3>
+                                <div>
+                                    <ul>
+                                        <li>
+                                            <div>
+                                                <a href="#" title="Sarah First"><img id="profile-image" src="images/s2-images/profile-pic-mini-sarah.png" alt="Sarah First"/>Sarah First </a>
+                                                <p>Type <strong>Collection</strong></p>
+                                                <p>Created <strong>Mar 11, 2013</strong></p>
+                                                <p>Last modified <strong>today at 12:37</strong></p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <h3>Description</h3>
+                                <div>
+                                    <ul>
+                                        <li>
+                                            <div>
+                                                <p>A place for all our research on various methods for testing water</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
-                            <h3>Created by</h3>
-                            <div>
-                                <ul>
-                                    <li>
-                                        <div>
-                                            <a href="#" title="Sarah First"><img id="profile-image" src="images/s2-images/profile-pic-mini-sarah.png" alt="Sarah First"/>Sarah First </a>
-                                            <p>Type <strong>Collection</strong></p>
-                                            <p>Created <strong>Mar 11, 2013</strong></p>
-                                            <p>Last modified <strong>today at 12:37</strong></p>
-                                        </div>
-                                    </li>
-                                </ul>
+                        </div>
+                        <div class="details" id="content">
+                            <h2 style="margin-left: 20px;">Tutorials</h2>
+                            <div id="accordion2">
+                                <h3>Research skills</h3>
+                                <div>
+                                    <ul>
+                                        <li>
+                                            <div>
+                                                <a href="javascript:;" id="gt_video_overlay_link" title="Selecting the Appropriate Database for Research">Selecting the Appropriate Database for Research</a>
+                                                <a href="#" title="Developing a Search Strategy">Developing a Search Strategy</a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <h3>Citations/bibliographies</h3>
+                                <div>
+                                    <ul>
+                                        <li>
+                                            <div>
+                                                <a href="#" title="Creating an EndNote Library/Adding References to EndNote">Creating an EndNote Library/Adding References to EndNote</a>
+                                                <a href="#" title="Creating an Annotated Bibliography with EndNote">Creating an Annotated Bibliography with EndNote</a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <h3>Papers</h3>
+                                <div>
+                                    <ul>
+                                        <li>
+                                            <div>
+                                                <a href="#" title="Avoiding Plagiarism - Citing Sources">Avoiding Plagiarism - Citing Sources</a>
+                                                <a href="#" title="Writing a paper">Writing a paper</a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <h3>Video</h3>
+                                <div>
+                                    <ul>
+                                        <li>
+                                            <div>
+                                                <a href="#" title="Video editing">Video editing</a>
+                                                <a href="#" title="Resources &amp; equipment for Creating a Video">Resources &amp; equipment for Creating a Video</a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <h3>Further skills</h3>
+                                <div>
+                                    <ul>
+                                        <li>
+                                            <div>
+                                                <a href="#" title="Using Wordpress to Create a Project Website">Using Wordpress to Create a Project Website</a>
+                                                <a href="#" title="Presentation skills">Presentation skills</a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
-                            <h3>Description</h3>
-                            <div>
-                                <ul>
-                                    <li>
-                                        <div>
-                                            <p>A place for all our research on various methods for testing water</p>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <h2 style="margin-left: 20px;">Tutorials</h2>
-                    <div id="accordion">
-                        <h3>Research skills</h3>
-                        <div>
-                            <ul>
-                                <li><a href="javascript:;" id="gt_video_overlay_link" title="Selecting the Appropriate Database for Research">Selecting the Appropriate Database for Research</a></li>
-                                <li id="with-divider"><a href="#" title="Developing a Search Strategy">Developing a Search Strategy</a></li>
-                            </ul>
-                        </div>
-                        <h3>Citations/bibliographies</h3>
-                        <div>
-                            <ul>
-                                <li><a href="#" title="Creating an EndNote Library/Adding References to EndNote">Creating an EndNote Library/Adding References to EndNote</a></li>
-                                <li><a href="#" title="Creating an Annotated Bibliography with EndNote">Creating an Annotated Bibliography with EndNote</a></li>
-                            </ul>
-                        </div>
-                        <h3>Papers</h3>
-                        <div>
-                            <ul>
-                                <li><a href="#" title="Avoiding Plagiarism - Citing Sources">Avoiding Plagiarism - Citing Sources</a></li>
-                                <li><a href="#" title="Writing a paper">Writing a paper</a></li>
-                            </ul>
-                        </div>
-                        <h3>Video</h3>
-                        <div>
-                            <ul>
-                                <li><a href="#" title="Video editing">Video editing</a></li>
-                                <li><a href="#" title="Resources &amp; equipment for Creating a Video">Resources &amp; equipment for Creating a Video</a></li>
-                            </ul>
-                        </div>
-                        <h3>Further skills</h3>
-                        <div>
-                            <ul>
-                                <li><a href="#" title="Using Wordpress to Create a Project Website">Using Wordpress to Create a Project Website</a></li>
-                                <li><a href="#" title="Presentation skills">Presentation skills</a></li>
-                            </ul>
                         </div>
                     </div>
                 </div>
@@ -348,9 +377,9 @@
                 </div>
             </div> 
 
-        <div class="gt-popup share" style="float:left; margin: 120px 0 0 100px;" id="research-path">
+        <div class="gt-popup source" style="display: block; z-index: 10000; top: 258px; left: 237.15px;" id="research-path">
             <div class="secondary-arrow-up"></div>
-            <div class="gt-popup-close share"></div>
+            <div class="gt-popup-close source"></div>
             <div class="sourced-from">Sourced from <a href="#" title="Complete environment">Complete environment</a></div>
             <div class="searches">
                 <ol>
@@ -378,6 +407,63 @@
                 </div>
                 <input type="text" placeholder="Comment"></input>
             </div>
-        </div>    
+        </div>
+
+        <div class="gt-popup share" style="float:left; margin-left: 40px;">
+            <div class="secondary-arrow-up"></div>
+            <div class="gt-popup-close share"></div>
+            <h1><div class="share-white-icon"></div>Share with</h1>
+            <div class="alternate input-container">
+                <input type="text" placeholder="Type who to share this with" id="share_autosuggest"/>
+            </div>
+            <h1><div class="addto-white-icon"></div>Add to</h1>
+            <div class="alternate gt-pop-up-list">
+                <div class="gt-force-right gt-counts-container">96</div>
+                <div class="gt-force-left archive-icon"></div>
+                <div>My archive</div>
+            </div>
+            <div class="gt-pop-up-list">
+                <div class="gt-force-left new-collection-icon"></div>
+                <div>
+                    <a href="javascript:;" id="share_new_collection">New collection</a>
+                    <input type="text" id="share_new_collection_input" style="display:none;"/>
+                    <button type="button" class="gt-button gt-black-button gt-force-right" id="share_new_collection_create" style="display: none;">Create</button>
+                </div>
+            </div>
+            <div class="gt-pop-up-list alternate white highlighted" style="display: none;" id="water_testing_listitem">
+                <div class="gt-force-right gt-counts-container">0</div>
+                <div class="gt-force-left collection-icon"></div>
+                <div>Research on water testing</div>
+            </div>
+            <div class="gt-pop-up-list alternate white">
+                <div class="gt-force-right gt-counts-container">6</div>
+                <div class="gt-force-left collection-icon"></div>
+                <div>Data analysis</div>
+            </div>
+            <div class="gt-pop-up-list alternate white">
+                <div class="gt-force-right gt-counts-container">2</div>
+                <div class="gt-force-left collection-icon"></div>
+                <div>Videos</div>
+            </div>
+            <div class="gt-pop-up-list alternate white">    
+                <div class="gt-force-right gt-counts-container">27</div>
+                <div class="gt-force-left collection-icon"></div>
+                <div>Photos</div>
+            </div>
+            <button type="button" class="gt-button gt-overlay-button" id="add-collection-btn">Add</button>
+        </div>
+
+        <div class="discussions gt-popup" style="display:none;">
+            <div class="secondary-arrow-up"></div>
+            <div class="gt-popup-close discussions-close"></div>
+            <div id="discussion">
+                <img src="images/dummy_users/profile-pic-john.png" alt="John Librarian" class="gt-force-left"/>
+                <div id="text-box">
+                    <textarea placeholder="Your comment"></textarea>
+                </div>
+                <button class="btn-cancel discussions-close gt-force-left" type="submit">Cancel</button>
+                <button class="gt-button gt-overlay-button gt-force-right" id="discussions-send" type="button">Send</button>
+            </div>
+        </div>
     </body>
 </html>

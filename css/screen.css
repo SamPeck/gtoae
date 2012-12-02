@@ -254,6 +254,7 @@ a {
 
 .gt-content-column {
     float: left;
+    min-height: 400px;
     margin: 40px 0 0 20px;
     width: 17%;
 }
@@ -266,6 +267,10 @@ a {
 .gt-content-column#gt-center-column-wide {
     float: left;
     width: 77%;
+}
+
+.gt-content-column#gt-center-column-wide.right-column-collapsed {
+    width: 92%;
 }
 
 .gt-content-column#gt-right-column {
@@ -281,14 +286,14 @@ a {
     overflow: hidden;
     display: block;
     background: url("../images/right-column-fade.png") no-repeat left top #efefef;
-    height: 734px;
+    min-height: 452px;
 }
 
 #gt-right-column-open #close-column-button {
     background: url("../images/close-column-icon.png") no-repeat center center transparent;
     width: 14px;
     height: 13px;
-    margin: 15px 0 0 20px;
+    margin: 15px 0 0 10px;
 }
 
 #gt-right-column-open #close-column-button:hover {
@@ -300,6 +305,21 @@ a {
     background: url("../images/close-column-icon-active.png") no-repeat center center transparent;
 }
 
+#gt-right-column-open #open-column-button {
+    background: url("../images/list-options-display-list-off.png") no-repeat scroll center center transparent;
+    height: 17px;
+    margin: 13px 0 0 7px;
+    width: 17px;
+}
+
+#gt-right-column-open #open-column-button:hover {
+    background: url("../images/list-options-display-list-hover.png") no-repeat center center transparent;
+    cursor: pointer;
+}
+
+#gt-right-column-open #open-column-button:active {
+    background: url("../images/list-options-display-list-active.png") no-repeat center center transparent;
+}
 
 /************************************************
  * STRUCTURAL EXTENSIONS FOR RIGHT COLUMN INLAY *
@@ -1517,7 +1537,7 @@ a.upload {
 
 a.share_add {
     float: right;
-    margin-right: 140px;
+    margin-right: 170px;
 }
 
 .action-icon#share_add {
@@ -1537,7 +1557,7 @@ a.share_add {
 
 a.archive {
     float: right;
-    margin-right: 85px;
+    margin-right: 115px;
 }
 
 .action-icon#archive {
@@ -1581,7 +1601,7 @@ a.archive {
 
 a.discussions {
     float: right;
-    margin-right: 85px;
+    margin-right: 115px;
 }
 
 .action-icon#discussions {
@@ -1614,14 +1634,14 @@ a.discussions {
     padding: 0;
 }
 
-#gridview-listed-item {
+.gridview-listed-item {
     float: left;
     display: block;
     margin: 0 2% 20px 0;
 }
 
-#gridview-listed-item #container, 
-#gridview-listed-item #container-open,
+.gridview-listed-item #container, 
+.gridview-listed-item #container-open,
 .activity-content-preview #container {
     float: left;
     display: block;
@@ -1644,7 +1664,7 @@ a.discussions {
     border-right: 1px solid #bbbab7;
 }
 
-#gridview-listed-item #container-inner,
+.gridview-listed-item #container-inner,
 .activity-content-preview #container-inner {
     bottom: 0;
     position: absolute;
@@ -1667,7 +1687,7 @@ a.discussions {
     font-style: italic;
 }
 
-#gridview-listed-item #title {
+.gridview-listed-item #title {
     max-height: 100%;
     min-height: 2%;
     width: 95%;
@@ -1675,14 +1695,14 @@ a.discussions {
     margin: 2% 2% 0 2%;
 }
 
-#gridview-listed-item #title a {
+.gridview-listed-item #title a {
     text-shadow: 0px 1px 0px #000;
     color: #fff;
     text-decoration: none;
     font-style: normal;
 }
 
-#gridview-listed-item #title a:hover {
+.gridview-listed-item #title a:hover {
     text-decoration: underline;
 }
 
@@ -1695,11 +1715,11 @@ a.discussions {
     color: #999;
 }
 
-#gridview-listed-item #title #type-add-share {
+.gridview-listed-item #title #type-add-share {
     margin: 10px 0 0 0;
 }
 
-#gridview-listed-item #title #type-add-share span {
+.gridview-listed-item #title #type-add-share span {
     float: right;
     height: 29px;
     width: 26px;
@@ -1708,11 +1728,11 @@ a.discussions {
     cursor: pointer;
 }
 
-#gridview-listed-item #title #type-add-share span:hover {
+.gridview-listed-item #title #type-add-share span:hover {
     background: url("../images/icon-add+share-white-hover.png") no-repeat;
 }
 
-#gridview-listed-item #title #type-add-share span:active {
+.gridview-listed-item #title #type-add-share span:active {
     background: url("../images/icon-add+share-white-clicked.png") no-repeat;
 }
 
@@ -1756,7 +1776,7 @@ a.discussions {
     -webkit-border-radius: 0 3px 3px 0;
 }   
 
-#gridview-listed-item input {
+.gridview-listed-item input {
     margin: 10px 0 0 0;
     padding: 0;
 }
@@ -1775,11 +1795,11 @@ a.discussions {
     font-style: italic;
 }
 
-#gridview-listed-item #gridview-content-details-closed {
+.gridview-listed-item #gridview-content-details-closed {
     float: left;
 }
 
-#gridview-listed-item #gridview-content-details-closed #grabber-closed {
+.gridview-listed-item #gridview-content-details-closed #grabber-closed {
     background-position: 2px 65px; 
     width: 12px;
     height: 158px;
@@ -1818,7 +1838,7 @@ a.discussions {
 
  /** GRID VIEW OPEN **/
 
-#gridview-listed-item #container-open {
+.gridview-listed-item #container-open {
     border-bottom: 1px solid #bbbab7;
     float: right !important;
     border-radius: 0 3px 3px 0 !important;
@@ -1872,7 +1892,7 @@ a.discussions {
     text-decoration: underline;
 }
 
-#gridview-listed-item.new-item #container, #gridview-listed-item.no-profile-pic #container {
+.gridview-listed-item.new-item #container, .gridview-listed-item.no-profile-pic #container {
     border: none;
     -moz-box-shadow: inset 0 0 5px #999;
     -webkit-box-shadow: inset 0 0 5px #999;
@@ -1886,13 +1906,13 @@ a.discussions {
     width: 158px;
 } 
 
-#gridview-listed-item.new-item #container #gridview-project {
+.gridview-listed-item.new-item #container #gridview-project {
     background: url("../images/grid-view-icon-project-disabled.png") no-repeat center 35px transparent;
     height: 158px;
     width: 158px;
 }
 
-#gridview-listed-item.new-item #container #new-item-btn {
+.gridview-listed-item.new-item #container #new-item-btn {
     bottom: 0;
     position: absolute;
     border: 0 none;
@@ -1901,35 +1921,35 @@ a.discussions {
     width: 70%;
 }
 
-#gridview-listed-item #no-profile-image-project {
+.gridview-listed-item #no-profile-image-project {
     background: url("../images/grid-view-icon-project-disabled.png") no-repeat center 35px transparent;
     height: 158px;
     width: 148px;
 }
 
-#gridview-listed-item #no-profile-image-project:hover {
+.gridview-listed-item #no-profile-image-project:hover {
     background: url("../images/grid-view-icon-project-hover.png") no-repeat center 35px transparent;
     height: 158px;
     width: 148px;
 }
 
-#gridview-listed-item #no-profile-image-project:active {
+.gridview-listed-item #no-profile-image-project:active {
     background: url("../images/grid-view-icon-project-clicked.png") no-repeat center 35px transparent;
     height: 158px;
     width: 148px;
 }
 
-#gridview-listed-item #container div.collection ul {
+.gridview-listed-item #container div.collection ul {
     height: 158px;
     width: 157px;
 }
 
-#gridview-listed-item #container div.collection ul li {
+.gridview-listed-item #container div.collection ul li {
     float: left;
     padding: 0;
 }
 
-#gridview-listed-item #container div.collection ul li#count-thumb{
+.gridview-listed-item #container div.collection ul li#count-thumb{
     text-align: center;
     background: -moz-linear-gradient(top, #cfcdcd 100%, #efefef 100%);
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#efefef), color-stop(100%,#e8e7e1));
@@ -1943,7 +1963,7 @@ a.discussions {
     border-right: 1px solid #bbbab7;
 }
 
-#gridview-listed-item #container div.collection ul li#count-thumb .gt-counts-container{
+.gridview-listed-item #container div.collection ul li#count-thumb .gt-counts-container{
     width: 20px;
     height: 15px;
     margin: 25% auto;
@@ -2122,6 +2142,10 @@ a.discussions {
     position: relative;
 }
 
+.gt-popup.discussions .secondary-arrow-up {
+    margin-left: 120px;
+}
+
 .gt-popup-close {
     background: url("../images/popup-icon-close.png") no-repeat center center transparent;
     cursor: pointer;
@@ -2283,10 +2307,12 @@ a:hover .archive-black-icon {
     color: #fff;
 }
 
+.gt-popup #discussion,
 .gt-popup #question {
     padding: 20px 0 0;
 }
 
+.gt-popup #discussion #text-box,
 .gt-popup #question #text-box {
     background-color: #FFFFFF;
     background-image: url("../images/forms/text-field-dragger.png");
@@ -2298,7 +2324,7 @@ a:hover .archive-black-icon {
     padding: 1px;
 }
 
-.gt-popup #question textarea {
+.gt-popup #question textarea, .gt-popup #discussion textarea {
     -moz-appearance: textfield-multiline;
     -moz-binding: url("chrome://global/content/platformHTMLBindings.xml#textAreas");
     -moz-user-select: text;
@@ -2327,7 +2353,11 @@ a:hover .archive-black-icon {
     resize: none;   
 }
 
-.gt-popup.question {
+.gt-popup #discussion #text-box {
+    margin-left: 35px;
+}
+
+.gt-popup.question, .gt-popup.discussions {
     position: absolute;
     right: 65px;
     top: -8px;
@@ -2764,7 +2794,7 @@ input.refine_search {
     font-style: italic;
 }
 
-.activity-item #gridview-listed-item {
+.activity-item .gridview-listed-item {
     margin: 20px 0 10px 0;
 }
 
@@ -2941,6 +2971,13 @@ input.refine_search {
     color: #fff;
     text-decoration: none;
     font-style: normal;
+}
+
+.activity-content-preview #title a.action_button.share,
+.gridview-listed-item #title a.action_button.share {
+    clear: both;
+    display: inline-block;
+    float: right;
 }
 
 .activity-content-preview #title a:hover {
