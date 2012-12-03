@@ -22,12 +22,11 @@
     </head>
     <body>
         <div id="gt-page-container">
-
             <div id="gt-topnavigation-container">
                 <div id="gt-topnavigation-left">
                     <ul>
                         <li>
-                            <a href="s2-13.html" title="Dashboard" id="topnavigation_home">
+                            <a href="s4-10.html" title="Dashboard" id="topnavigation_home">
                                 <div class="gt-home-icon"></div>
                             </a>
                         </li>
@@ -50,7 +49,7 @@
                 </div>
                 <div id="gt-topnavigation-right">
                     <a href="#" title="Account settings" id="topnavigation_settings" class="gt-force-right">
-                        <div class="gt-cogwheel-icon"></div>
+                    	<div class="gt-cogwheel-icon"></div>
                     </a>
                     <form id="topnavigation_search_form" class="gt-force-right">
                         <input type="text" id="topnavigation_search_input" class="gt-force-right"/>
@@ -60,43 +59,44 @@
                 </div>
                 <div id="gt-topnavigation-center"></div>
             </div>
-
-            <div id="gt-lhnav-container">
-                <a href="s2-01.html" title="John's Dashboard"><img id="profile-image" src="images/s2-images/profile-pic-john.png" alt="John Librarian"/></a>
-                <ul id="mini-left-nav">
-                    <li><a href="#" title="John's Discussions" id="discussions"></a></li>
-                    <li><a href="#" title="John's Collections" id="collections"></a></li>
-                    <li><a href="#" title="John's Tasks" id="tasks"></a></li>
-                    <li><a href="#" title="John's Courses" id="courses"></a></li>
-                    <li><a href="#" title="John's Groups" id="groups"></a></li>
-                    <li><a href="#" title="John's Network" id="network"></a></li>
-                    <li><a href="#" title="John's Archive" id="archive"></a></li>
-                    <li id="lhnav-arrow"><a href="s2-05.html" title="Research questions for John" id="questions"></a></li>
-                </ul>
+                </div>
+                <div id="gt-topnavigation-center"></div>
             </div>
-            
-            <div id="gt-content-container">
+             <div id="gt-content-container">
                 <div id="user-box" class="gt-title-clip">
                     <div class="gt-title-clip-right"></div>
                     <div class="gt-title-clip-left"></div>
-                    <img id="profile-image" src="images/s2-images/profile-pic-research-questions.png" alt="Research question"/>
-                    <div class="gt-force-left user-box-arrow">
-                        <a href="#" title="More actions (e.g. Grade)"><h1>Research question</h1><div id="my-dropdown"></div></a>
-                    </div>
+                    <a href="s4-10.html" title="John's dashboard"><img id="profile-image" src="images/s2-images/profile-pic-john.png" alt="John Librarian"/></a>
+                    <a href="#" title="More related to me (My profile, messages, account)"><h1>John Librarian</h1><div id="my-dropdown"></div></a>
                 </div>
-                <a title="Share+Add this with or to anyone or anywhere" class="share_add action_button share" href="javascript:;">
-                    <div class="gt-action-clip-secondary-bg-gradient">
-                        <div class="gt-action-clip-secondary-clip-top"></div>
-                        <div class="action-icon" id="share_add"></div>
+                <a title="Create anything (Document, To-do, Collection, Group)" class="create" href="#">
+                    <div class="gt-action-clip-primary">
+                        <div class="action-clip-right"></div>
+                        <div class="action-clip-left"></div>
+                        <div class="action-icon" id="create">Create<span id="clip-down-arrow"></span></div>
                     </div>
                 </a>
-                <a title="Share+Add this with or to anyone or anywhere" class="archive" href="#">
-                    <div class="gt-action-clip-secondary-bg-gradient">
-                        <div class="gt-action-clip-secondary-clip-top"></div>
-                        <div class="action-icon" id="archive"></div>
+                <a title="Upload video, files, documents and links" class="upload" href="#">
+                    <div class="gt-action-clip-secondary">
+                        <div class="action-clip-right"></div>
+                        <div class="action-clip-left"></div>
+                        <div class="action-icon" id="upload">Upload</div>
                     </div>
                 </a>
-                <div class="gt-content-column" id="gt-center-column-wide">
+                <div id="gt-lhnav-container-maxi">
+                    <ul class="selected">
+                        <li><a href="#" title="John's Discussions" id="discussions">Discussions</a><div class="gt-counts-container">5</div></li>
+                        <li><a href="#" title="John's Collections" id="collections">Collections</a><div class="gt-counts-container">12</div></li>
+                        <li><a href="#" title="John's Tasks" id="tasks">Tasks</a><div class="gt-counts-container">2</div></li>
+                        <li><a href="#" title="John's Courses" id="courses">Courses</a><div class="gt-counts-container">1</div></li>
+                        <li><a href="#" title="John's Groups" id="groups">Groups</a><div class="gt-counts-container">3</div></li>
+                        <li><a href="#" title="John's Network" id="network">Network</a><div class="gt-counts-container">14</div></li>
+                        <li><a href="#" title="John's Archive" id="archive">Archive</a><div class="gt-counts-container">44</div></li>
+                        <li><a href="#" title="Research questions for John" id="questions">Research questions</a><div class="gt-counts-container">6</div></li>
+                        <li id="lhnav-arrow"><span title="John's Research projects" id="projects">Research projects</span><div class="gt-counts-container">1</div></li>
+                    </ul>
+                </div>
+                <div class="gt-content-column" id="gt-center-column">
                     <div class="center_panel">
                         <div class="center-panel-inner">
                             <div style="display: none; margin-bottom: 0;">
@@ -111,80 +111,83 @@
                                     </div>
                                     <span class="gt-force-right" id="panel_sort_by">Sort by</span>
                                 </div>
-                                <h2 class="panel_header">Results <span class="gt-counts-container">86</span></h2>
+                                <h2 class="panel_header">Research projects <span class="gt-counts-container">1</span></h2>
                                 <div id="select-all"><input type="checkbox"/></div>
                                 <div class="action_button share fixed_width">
-                                    <a href="javascript:;">
-                                        <div class="share-black-icon gt-force-left"></div>
-                                        <span>Share + add</span>
-                                    </a>
-                                </div>
-                                <div class="action_button archive fixed_width">
-                                    <a href="#">
-                                        <div class="archive-black-icon gt-force-left"></div>
-                                        <span>Archive</span>
-                                    </a>
+                                    <div class="share-black-icon gt-force-left"></div>
+                                    <span>Share + add</span>
                                 </div>
                             </div>
                             <img src="images/list-options-shadow-search.png"/>
                             <a href="" title="Close list options" id="research-results-1"><div id="grabber-list-options"></div></a>
                         </div>
                     </div>
-                    <div class="question-item">
-                        <div class="discussion-item">
-                            <img src="images/s2-images/profile-pic-sarah.png" alt="Sarah First"/>
-                        </div>
-                        <div class="question-right">
-                            <div class="discussion-bubble" id="question-bubble">
-                                <div class="tertiary-arrow-left"></div>
-                                <a href="s2-08.html">
-                                    <div class="research-summary">
-                                        <ul>
-                                            <li id="searches"><div class="gt-counts-container">2</div></li>
-                                            <li id="saves"><div class="gt-counts-container">1</div></li>
-                                        </ul>
+                    <div class="gridview-listed-item">
+                            <div id="container">
+                                <div id="container-inner">
+                                    <div id="title">
+                                        <a href="s4-11.html" title="Water testing">Water testing</a>
+                                        <div id="type-add-share">Research project</div>
                                     </div>
-                                </a>    
-                                <a href="#" title="Sarah First">Sarah First</a> <span>1 min ago</span>
-                                <p>Does anyone know the best way to test for bacteria in water?</p>
-                            </div>
-                            <div class="question-comment">
-                              <div class="discussion-reply">
-                                    <div class="discussion-item">
-                                        <img src="images/s2-images/profile-pic-john.png" alt="John Librarian"/>
-                                    </div>
-                                    <div class="discussion-bubble">
-                                        <div class="tertiary-arrow-left"></div>
-                                        <a href="#" title="John Librarian">John Librarian</a> <span>5 seconds ago</span>
-                                        <p>I think you are on the right track, only you may need to try some alternative keywords. If “creek” isn’t returning what you need, try “fresh water”, “stream”, or other similar terms. Also, along with bacteria or pathogen, try adding other words that would indicate you are looking to test water for organisms that should not be present in a healthy creek or stream. Any ideas?</p>
-                                    </div>
-                                    <input type="text" placeholder="Comment"></input>
                                 </div>
+                                <a href="s4-11.html" title="Water testing"> 
+                                    <img src="images/s3-images/grid-view-project-profile-6.png" title="Water testing" />
+                                </a>
+                                </div>
+                                <a href="#" title="Slide open for more details">
+                                    <div id="gridview-content-details">
+                                        <div id="grabber"></div>
+                                    </div>
+                                </a>
+                            <div>
+                                <input type="checkbox" id="research-results-1"/>
                             </div>
                         </div>
-                    </div> 
-                </div> 
-                <div class="gt-content-column" id="gt-right-column-open">
-                    <div id="close-column-button"></div>
-                    <div id="open-column-button" style="display: none;"></div>
-                    <div class="details">
-                        <h2>Details</h2>
-                        <ul>
-                            <li>Shared with
-                                <div>
-                                    <h2>People<span class="gt-counts-container">1</span></h2>
-                                    <a href="#" title="John Librarian"><img id="profile-image" src="images/s2-images/profile-pic-mini-john.png" alt="John Librarian"/>John Librarian </a>
-                                    <h2>Courses<span class="gt-counts-container">1</span></h2>
-                                    <a href="#" title="Biology 101" id="last-item"><img id="profile-image" src="images/s2-images/profile-pic-mini-biology101.png" alt="Biology 101"/>Biology 101 </a>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
                 </div>
-            </div>
+                <div class="gt-content-column" id="gt-right-column">
+                   <h2>Tutorials</h2>
+                    <div id="accordion">
+                        <h3>Research skills</h3>
+                        <div>
+                            <ul>
+                                <li><a href="javascript:;" id="gt_video_overlay_link" title="Selecting the Appropriate Database for Research">Selecting the Appropriate Database for Research</a></li>
+                                <li id="with-divider"><a href="#" title="Developing a Search Strategy">Developing a Search Strategy</a></li>
+                            </ul>
+                        </div>
+                        <h3>Citations/bibliographies</h3>
+                        <div>
+                            <ul>
+                                <li><a href="#" title="Creating an EndNote Library/Adding References to EndNote">Creating an EndNote Library/Adding References to EndNote</a></li>
+                                <li><a href="#" title="Creating an Annotated Bibliography with EndNote">Creating an Annotated Bibliography with EndNote</a></li>
+                            </ul>
+                        </div>
+                        <h3>Papers</h3>
+                        <div>
+                            <ul>
+                                <li><a href="#" title="Avoiding Plagiarism - Citing Sources">Avoiding Plagiarism - Citing Sources</a></li>
+                                <li><a href="#" title="Writing a paper">Writing a paper</a></li>
+                            </ul>
+                        </div>
+                        <h3>Video</h3>
+                        <div>
+                            <ul>
+                                <li><a href="#" title="Video editing">Video editing</a></li>
+                                <li><a href="#" title="Resources &amp; equipment for Creating a Video">Resources &amp; equipment for Creating a Video</a></li>
+                            </ul>
+                        </div>
+                        <h3>Further skills</h3>
+                        <div>
+                            <ul>
+                                <li><a href="#" title="Using Wordpress to Create a Project Website">Using Wordpress to Create a Project Website</a></li>
+                                <li><a href="#" title="Presentation skills">Presentation skills</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+             </div>
         </div>
 
-        <div class="gt-popup share" style="float:left; margin-left: 40px;">
+        <div class="gt-popup share" style="float:left; margin-left: 30px;">
             <div class="secondary-arrow-up"></div>
             <div class="gt-popup-close share"></div>
             <h1><div class="share-white-icon"></div>Share with</h1>
@@ -227,5 +230,6 @@
             </div>
             <button type="button" class="gt-button gt-overlay-button" id="add-collection-btn">Add</button>
         </div>
+
     </body>
 </html>

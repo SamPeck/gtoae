@@ -306,19 +306,19 @@ a {
 }
 
 #gt-right-column-open #open-column-button {
-    background: url("../images/list-options-display-list-off.png") no-repeat scroll center center transparent;
-    height: 17px;
-    margin: 13px 0 0 7px;
+    background: url("../images/s2-images/open-column-icon.png") no-repeat scroll center center transparent;
+    height: 12px;
+    margin: 11px 0 0 7px;
     width: 17px;
 }
 
 #gt-right-column-open #open-column-button:hover {
-    background: url("../images/list-options-display-list-hover.png") no-repeat center center transparent;
+    background: url("../images/s2-images/open-column-icon-hover.png") no-repeat center center transparent;
     cursor: pointer;
 }
 
 #gt-right-column-open #open-column-button:active {
-    background: url("../images/list-options-display-list-active.png") no-repeat center center transparent;
+    background: url("../images/s2-images/open-column-icon-active.png") no-repeat center center transparent;
 }
 
 /************************************************
@@ -1032,7 +1032,8 @@ a {
 }
 
 #gt-lhnav-container ul li #search:hover, 
-#gt-lhnav-container-maxi ul li #search:hover {
+#gt-lhnav-container-maxi ul li #search:hover,
+#gt-lhnav-container-maxi ul li span#search {
     background: url("../images/context-icon-search-history-hover.png") no-repeat 0 0 transparent;
 }
 
@@ -2644,6 +2645,14 @@ input.refine_search {
     margin-right: 40px;
 }
 
+#panel_expand_all {
+    background: url("../images/down-arrow.png") no-repeat center right transparent;
+    width: 70px;
+    height: 15px;
+    line-height: 9px;
+    margin-right: 20px;
+
+}
 #display-toggle {
     background-color: #c7c7c7;
     border-radius: 3px;
@@ -2761,6 +2770,15 @@ input.refine_search {
     margin-top: 14px;
 }
 
+.activity-item-no-bg {
+    max-width: 90%;
+    display: block;
+    padding: 5px;
+    overflow: hidden;
+    margin-top: 15px;
+    margin-bottom: 0;
+}
+
 .activity-item #activity-summary li {
     float: left;
     margin-right: 5px;
@@ -2836,6 +2854,12 @@ input.refine_search {
     margin-bottom: 5px;
 }
 
+div.discussion-bubble#smaller {
+    max-width: 75% !important;
+    min-width: 75% !important;
+
+}
+
 .discussion-bubble .tertiary-arrow-left {
     float: left;
     background: url('../images/discussion-bubble-arrow-left.png') no-repeat left center transparent;
@@ -2857,7 +2881,6 @@ input.refine_search {
 .discussion-bubble a:hover {
     text-decoration: underline;
 }
-
 
 .discussion-bubble p {
     margin: 0;
@@ -2910,6 +2933,10 @@ input.refine_search {
     margin: 10px 0 0 34px;
 }
 
+.discussion-reply#smaller {
+    margin-left: 0 !important;
+}
+
 .discussion-reply input {
     margin: 0 0 0 35px;
     max-width: 86%;
@@ -2939,6 +2966,11 @@ input.refine_search {
     float: left;
     display: block;
     margin-right: 5px;
+}
+
+.activity-item .most-recent-title {
+    margin-bottom: 10px;
+    font-style: italic;
 }
 
 /* CONTENT ACTIVITY */
@@ -3242,6 +3274,10 @@ h5.empty-notification {
 .summary-panel h3 {
     background: url('../images/s2-images/icon-down-arrow.png') no-repeat 2px center transparent;
     padding-left: 20px;
+}
+
+.summary-panel h3.summary_collapsed {
+    background: url('../images/s2-images/icon-right-arrow.png') no-repeat 2px center transparent !important;
 }
 
 .summary-panel h3:hover {

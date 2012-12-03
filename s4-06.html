@@ -13,10 +13,11 @@
         <script src="js/main.js"></script>
         <script>
             $(function() {
-                $( "#accordion" ).accordion({
+                $("#accordion").accordion({
                     heightStyle: "content",
                     active: 0,
                 });
+
                 $("#accordion2").accordion({
                     heightStyle: "content",
                     active: 0,
@@ -37,7 +38,7 @@
                 <div id="gt-topnavigation-left">
                     <ul>
                         <li>
-                            <a href="s2-13.html" title="Dashboard" id="topnavigation_home">
+                            <a href="s4-01.html" title="Dashboard" id="topnavigation_home">
                                 <div class="gt-home-icon"></div>
                             </a>
                         </li>
@@ -63,7 +64,7 @@
                         <div class="gt-cogwheel-icon"></div>
                     </a>
                     <form id="topnavigation_search_form" class="gt-force-right">
-                        <a href="s3-07.html"><input type="text" id="topnavigation_search_input" class="gt-force-right"/></a>
+                        <a href="#"><input type="text" id="topnavigation_search_input" class="gt-force-right"/></a>
                     </form>
 
                     <a href="#" id="topnavigation-explore-link" class="gt-force-right">Explore</a>
@@ -72,11 +73,11 @@
             </div>
 
              <div id="gt-lhnav-container">
-                <a href="s2-08.html" title="Go back to previous level"><img id="go-back-level" src="images/back_arrow_icon.png" alt="Go back to previous level"/></a>
+                <a href="s4-03.html" title="Go back to previous level"><img id="go-back-level" src="images/back_arrow_icon.png" alt="Go back to previous level"/></a>
              </div>
              <div id="gt-lhnav-container" class="second-level-nav">
                 <ul id="maxi-left-nav">
-                    <li id="lhnav-arrow"><a href="s2-08.html" title="Does anyone know the best way to test for bacteria in water? (by Sarah First)" id="questions"></a></li>
+                    <li id="lhnav-arrow"><a href="s4-03.html" title="Water Testing – Search history research assisted search (by Sarah First)" id="search"></a></li>
                 </ul>
              </div>
 
@@ -96,7 +97,7 @@
                         <div class="action-icon" id="share_add"></div>
                     </div>
                 </a>
-                <a title="Discuss this collection" class="discussions" href="javascript:;">
+                <a title="Discuss this collection" class="discussions" href="s4-07.html">
                     <div class="gt-action-clip-tertiary-bg-gradient">
                         <div class="gt-action-clip-tertiary-clip-top"></div>
                         <div class="action-icon" id="discussions"></div>
@@ -150,7 +151,7 @@
                                 </a>
                             <div>
                                 <input type="checkbox" id="research-results-1"/>
-                                <a href="javascript:;" class="action_button share" title="View the research path taken for this content"><div class="research-path"></div></a>
+                                <a href="javascript:;" class="action_button source" title="View the research path taken for this content"><div class="research-path"></div></a>
                             </div>
                         </div>
 
@@ -173,7 +174,7 @@
                                 </a>
                             <div>
                                 <input type="checkbox" id="research-results-1"/>
-                                <a href="javascript:;" class="action_button share" title="View the research path taken for this content"><div class="research-path"></div></a>
+                                <a href="javascript:;" class="action_button source" title="View the research path taken for this content"><div class="research-path"></div></a>
                             </div>
                         </div>
 
@@ -196,7 +197,7 @@
                                 </a>
                             <div>
                                 <input type="checkbox" class="share" id="research-results-1"/>
-                                <a href="javascript:;" class="action_button share" title="View the research path taken for this content"><div class="research-path"></div></a>
+                                <a href="javascript:;" class="action_button source" title="View the research path taken for this content"><div class="research-path"></div></a>
                             </div>
                         </div>
 
@@ -219,7 +220,7 @@
                                 </a>
                             <div>
                                 <input type="checkbox" id="research-results-1"/>
-                                <a href="javascript:;" class="action_button share" title="View the research path taken for this content"><div class="research-path"></div></a>
+                                <a href="javascript:;" class="action_button source" title="View the research path taken for this content"><div class="research-path"></div></a>
                             </div>
                         </div>
                     
@@ -240,7 +241,9 @@
                                                 <h2>People<span class="gt-counts-container">1</span></h2>
                                                 <a href="#" title="John Librarian"><img id="profile-image" src="images/s2-images/profile-pic-mini-john.png" alt="John Librarian"/>John Librarian </a>
                                                 <h2>Courses<span class="gt-counts-container">1</span></h2>
-                                                <a href="#" title="Biology 101" id="last-item"><img id="profile-image" src="images/s2-images/profile-pic-mini-biology101.png" alt="Biology 101"/>Biology 101 </a>
+                                                <a href="#" title="Biology 101 - Course"><img id="profile-image" src="images/s2-images/profile-pic-mini-biology101.png" alt="Biology 101"/>Biology 101 </a>
+                                                <h2>Research projects<span class="gt-counts-container">1</span></h2>
+                                                <a href="#" title="Water Testing – Research project" id="last-item"><img id="profile-image" src="images/s4-images/profile-pic-mini-water-testing.png" alt="Water Testing – Research project"/>Water Testing</a>
                                             </div>
                                         </li>
                                     </ul>
@@ -377,7 +380,19 @@
                 </div>
             </div> 
 
-        <div class="gt-popup source" style="display: block; z-index: 10000; top: 258px; left: 237.15px;" id="research-path">
+        <div class="discussions gt-popup" style="display:none;">
+            <div class="secondary-arrow-up"></div>
+            <div class="gt-popup-close discussions-close"></div>
+            <div id="discussion">
+                <img src="images/dummy_users/profile-pic-john.png" alt="John Librarian" class="gt-force-left"/>
+                <div id="text-box">
+                    <textarea placeholder="Comment"></textarea>
+                </div>
+                <button class="gt-button gt-overlay-button gt-force-right" id="discussions-send" type="button">Post</button>
+            </div>
+        </div>
+
+        <div class="gt-popup source" style="display: none;" id="research-path">
             <div class="secondary-arrow-up"></div>
             <div class="gt-popup-close source"></div>
             <div class="sourced-from">Sourced from <a href="#" title="Complete environment">Complete environment</a></div>
@@ -386,15 +401,15 @@
                     <li>“Counting bacteria pathogens in water”</li>
                 </ol>
             </div>
-            <div class="comment" style="display: none;">
-                <input type="text" placeholder="Comment"></input>
+            <div class="comment">
+                <a href="#"><input type="text" placeholder="Comment"></input></a>
             </div>
             <div class="comment" style="display: none;">
                 <img src="images/s2-images/profile-pic-john.png" alt="John Librarian"/>
                 <textarea focus="focus" id="comment-infocus"></textarea>
                 <button id="post" class="gt-button gt-black-button gt-force-right" style="" type="button">Post</button>
             </div>
-            <div class="comment">
+            <div class="comment"style="display: none;">
                 <div class="discussion-reply">
                     <div class="discussion-item">
                         <img src="images/s2-images/profile-pic-john.png" alt="John Librarian"/>
@@ -402,7 +417,7 @@
                     <div class="discussion-bubble">
                         <div class="tertiary-arrow-left"></div>
                         <a href="#" title="Sarah First">John Librarian</a> <span>30 mins ago</span>
-                        <p>Careful with the accuracy on this one, there has been recent studies disproving these theories, although interesting ideas </p>
+                        <p>Careful with the accuracy on this one as there has been recent studies disproving these theories, although interesting ideas </p>
                     </div>
                 </div>
                 <input type="text" placeholder="Comment"></input>
@@ -452,29 +467,5 @@
             </div>
             <button type="button" class="gt-button gt-overlay-button" id="add-collection-btn">Add</button>
         </div>
-
-        <div id="research-path" style="display: none;" class="gt-popup discussions">
-            <div class="secondary-arrow-up"></div>
-            <div class="gt-popup-close discussions-close"></div>
-            <div style="display: none;" class="comment">
-                <img alt="John Librarian" src="images/s2-images/profile-pic-john.png">
-                <textarea id="comment-infocus" focus="focus"></textarea>
-                <button type="button" style="" class="gt-button gt-black-button gt-force-right" id="post">Post</button>
-            </div>
-            <div class="comment">
-                <div class="discussion-reply">
-                    <div class="discussion-item">
-                        <img alt="John Librarian" src="images/s2-images/profile-pic-john.png">
-                    </div>
-                    <div class="discussion-bubble">
-                        <div class="tertiary-arrow-left"></div>
-                        <a title="Sarah First" href="#">John Librarian</a> <span>30 mins ago</span>
-                        <p>Hi Guys I see your requirements outline peer review articles, if you keep in mind that there are many that look at lab experiments and pathogens in water in the Medical databases too.</p>
-                    </div>
-                </div>
-                <input type="text" placeholder="Comment">
-            </div>
-        </div>
-
     </body>
 </html>

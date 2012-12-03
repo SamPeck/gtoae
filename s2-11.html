@@ -37,7 +37,7 @@
                 <div id="gt-topnavigation-left">
                     <ul>
                         <li>
-                            <a href="javascript:;" title="Dashboard" id="topnavigation_home">
+                            <a href="s2-13.html" title="Dashboard" id="topnavigation_home">
                                 <div class="gt-home-icon"></div>
                             </a>
                         </li>
@@ -81,11 +81,11 @@
              </div>
 
              <div id="gt-content-container">
-                <div id="user-box" class="gt-title-clip">
+                <div id="group-box" class="gt-title-clip">
                     <div class="gt-title-clip-right"></div>
                     <div class="gt-title-clip-left"></div>
                     <a href="#" title="Research on water testing"><img id="profile-image" src="images/s2-images/profile-pic-collection.png" alt="Research on water testing – Collection"/></a>
-                    <div class="gt-force-left user-box-multiline-arrow">
+                    <div class="gt-force-left group-box-multiline">
                         <a href="#" title="More about Research on water testing"><h1 class="gt-force-left">Research on water testing</h1></a>
                         <span>Collection</span>
                     </div>
@@ -271,7 +271,7 @@
                             </div>
                         </div>
                         <div class="details" id="content">
-                            <h2 style="margin-left: 20px;">Tutorials</h2>
+                            <h2>Tutorials</h2>
                             <div id="accordion2">
                                 <h3>Research skills</h3>
                                 <div>
@@ -453,16 +453,26 @@
             <button type="button" class="gt-button gt-overlay-button" id="add-collection-btn">Add</button>
         </div>
 
-        <div class="discussions gt-popup" style="display:none;">
+        <div id="research-path" style="display: none;" class="gt-popup discussions">
             <div class="secondary-arrow-up"></div>
             <div class="gt-popup-close discussions-close"></div>
-            <div id="discussion">
-                <img src="images/dummy_users/profile-pic-john.png" alt="John Librarian" class="gt-force-left"/>
-                <div id="text-box">
-                    <textarea placeholder="Your comment"></textarea>
+            <div style="display: none;" class="comment">
+                <img alt="John Librarian" src="images/s2-images/profile-pic-john.png">
+                <textarea id="comment-infocus" focus="focus"></textarea>
+                <button type="button" style="" class="gt-button gt-black-button gt-force-right" id="post">Post</button>
+            </div>
+            <div class="comment">
+                <div class="discussion-reply">
+                    <div class="discussion-item">
+                        <img alt="John Librarian" src="images/s2-images/profile-pic-john.png">
+                    </div>
+                    <div class="discussion-bubble">
+                        <div class="tertiary-arrow-left"></div>
+                        <a title="Sarah First" href="#">John Librarian</a> <span>30 mins ago</span>
+                        <p>Hi Guys I see your requirements outline peer review articles, if you keep in mind that there are many that look at lab experiments and pathogens in water in the Medical databases too.</p>
+                    </div>
                 </div>
-                <button class="btn-cancel discussions-close gt-force-left" type="submit">Cancel</button>
-                <button class="gt-button gt-overlay-button gt-force-right" id="discussions-send" type="button">Send</button>
+                <input type="text" placeholder="Comment">
             </div>
         </div>
     </body>
